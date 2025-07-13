@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Three Containers Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #beafaf;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+       gap: 30px;
+    }
+
+    .container h2 {
+      margin-top: 0;
+    }
+
+    .outer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    
+  }
+
+  .inner-container {
+    padding: 10px;
+    background-color: #d0e0f0;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Hi , I am Mahmoud Jadid</h2>
+    <h4>I am a web developer , specializing in websites and apps.</h4>
+    <img src="img/image-01.jpg" alt="Image" width="250" height="250" style="justify-content: right;">
+  </div>
+
+  <div class="outer-container">
+    <div class="inner-container">
+        <h3>First Preoject</h3>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Container 3</h2>
+    <p>This is the third container.</p>
+  </div>
+
+</body>
+</html>

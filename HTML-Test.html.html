@@ -8,11 +8,9 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background-color: #beafaf;
     }
 
     .container {
-      background-color: white;
       padding: 20px;
       margin: 20px 0;
       display: flex;
@@ -21,49 +19,54 @@
       gap: 30px;
     }
 
-    .container h2 {
-      margin-top: 0;
-    }
-
     .outer-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
     
   }
 
   .inner-container {
     padding: 10px;
-    background-color: #d0e0f0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .box{
+    background-color: bisque;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
     flex-grow: 1;
     text-align: center;
   }
 
+  .element.style{
+    display: flex;
+
+  }
   </style>
 </head>
 <body>
 
   <div class="container">
+    <h3>Mahmoud Jadid</h3>
     <h2>Hi , I am Mahmoud Jadid</h2>
-    
     <p>
-      <img src="C:\Users\mahmo\OneDrive\Desktop\SeFactory\SeFactory63\personal-profile\image-01.jpg" alt="image" style="float:right;width:250px;height:250px;">
-      Hi I am Mahmoud Jadid <br><br>I am a web developer
+    <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
     </p>
-
 
   </div>
 
-<div class="outer-container" style="justify-content: center;align-items: center;flex-direction: row;">
+<div class="outer-container" style="justify-content: center;align-items: center;">
     <div class="inner-container" style="justify-content: center;align-items: center;">
     <p>First Project<br>This is my first Project.</p>
   </div>
 
 
-  <div class="inner-container" style="justify-content: center;align-items: center;">
+  <div class="inner-container" style="justify-content: center;align-items: flex-start;">
     <p>Second Project<br>This is inside the inner container.</p>
   </div>
 
@@ -72,9 +75,10 @@
   </div>
 
 </div>
-  <div class="container">
-    <h2>Container 3</h2>
-    <p>This is the third container.</p>
+  <div class="container" style="justify-content: space-between; align-items:flex-end; flex-direction: row;">
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
   </div>
 
 </body>

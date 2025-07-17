@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="C:\Users\mahmo\OneDrive\Desktop\SeFactory\SeFactory63\personal-profile">
+<link rel="stylesheet" href="./styles-me.css">
+<link rel="script" href="./javascript.js">
   <title>Three Containers Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #beafaf;
-    }
-
-    .container {
-      background-color: white;
-      padding: 20px;
-      margin: 20px 0;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .container h2 {
-      margin-top: 0;
-    }
-
-    .outer-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;    
-  }
-
-  .inner-container {
-    padding: 10px;
-    background-color: #d0e0f0;
-    flex-grow: 1;
-    text-align: center;
-  }
   
-  </style>
 </head>
 <body>
   
   <div class="container">
-    <h2>Hi , I am Mahmoud Jadid <button type="button" style="float: right;">About</button><button type="button" style="float: right;">Projects</button><button type="button" style="float: right;">Contacts</button></h2>
+    <h2>Hi , I am Mahmoud Jadid <button type="button" style="float: right;">About</button>
+      <button type="button" style="float: right;">Projects</button>
+      <button type="button" style="float: right;">Contacts</button></h2>
     
     <p>
-      <img src="C:\Users\mahmo\OneDrive\Desktop\SeFactory\SeFactory63\personal-profile\image-01.jpg" alt="image" style="float:right;width:250px;height:250px;">
+      <img src="C:\Users\mahmo\OneDrive\Desktop\SeFactory\SeFactory63\personal-profile\image-01.jpg" 
+      alt="image" style="float:right;width:250px;height:250px;" id="hover" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
       Hi I am Mahmoud Jadid <br><br>I am a web developer<br><br><br><br><br><br><button type="button" >View My Work</button>
     </p>    
   </div>

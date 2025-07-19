@@ -1,11 +1,11 @@
-<script>
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
+const img = document.getElementById("hover");
 
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
-}
-</script>
+  img.addEventListener("mouseover", function () {
+    img.style.width= "600px";
+    img.style.height= "600px";
+  });
+
+  img.addEventListener("mouseout", function () {
+    img.style.width = "400px";
+    img.style.height= "400px";
+  });
